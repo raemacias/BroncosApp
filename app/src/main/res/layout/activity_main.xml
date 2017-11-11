@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="18dp"
+      android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp">
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="75dp"
+          android:gravity="center"
+          android:padding="4dp"
+          android:src="@drawable/helmetplain"
+          android:textColor="#616161"/>
+
+      <TextView
+          android:id="@+id/opposing_team_score"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:padding="4dp"
+          android:text="0"
+          android:textColor="#FB4F14"
+          android:textSize="56sp"/>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:onClick="addOppTeamTouchdown"
+          android:text="Touchdown!"/>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="6dp"
+          android:onClick="addOppTeamExtraPoint"
+          android:text="Extra Point"/>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="6dp"
+          android:onClick="addOppTeamTwoPoints"
+          android:text="Go for 2"/>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="6dp"
+          android:onClick="addOppTeamFieldGoal"
+          android:text="Field Goal"/>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="6dp"
+          android:onClick="addOppTeamSafety"
+          android:text="Safety"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="130dp"
+        android:layout_marginTop="16dp"
+        android:background="#FB4F14"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp">
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="75dp"
+          android:gravity="center"
+          android:padding="4dp"
+          android:src="@drawable/broncoshelmet"
+          android:textColor="#616161"/>
+
+      <TextView
+          android:id="@+id/broncos_score"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:padding="4dp"
+          android:text="0"
+          android:textColor="#FB4F14"
+          android:textSize="56sp"/>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:onClick="addBroncosTouchdown"
+          android:text="Touchdown!"/>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="6dp"
+          android:onClick="addBroncosExtraPoint"
+          android:text="Extra Point"/>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="6dp"
+          android:onClick="addBroncosTwoPoints"
+          android:text="Go for 2"/>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="6dp"
+          android:onClick="addBroncosFieldGoal"
+          android:text="Field Goal"/>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="6dp"
+          android:onClick="addBroncosSafety"
+          android:text="Safety"/>
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="20dp"
+      android:background="#FB4F14"
+      android:onClick="reset"
+      android:text="Reset"/>
+
+</RelativeLayout>
